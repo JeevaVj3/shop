@@ -15,4 +15,8 @@ public class ShopService {
 		return sd.det(det);
 	}
 
+	public List<Shop> get() {
+		return sd.get();
+	}
+
 }

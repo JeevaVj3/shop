@@ -23,8 +23,15 @@ public class ShopController {
 	@PostMapping("postall")
 	public String msg(@RequestBody List<Shop> det) {
 		PropertyConfigurator.configure("log.properties");
-		log.info(det);
-		return ss.det(det);
+		log.info(ss.det(det));
+		return ss.det(det);	
+	}
+	
+	@GetMapping("getall")
+	public List<Shop> get() {
+		PropertyConfigurator.configure("log.properties");
+		log.info(ss.get());
+		return ss.get();
 	}
 
 }

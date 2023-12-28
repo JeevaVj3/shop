@@ -16,4 +16,8 @@ public class ShopDao {
 		return "Saved";
 	}
 
+	public List<Shop> get() {
+		return sr.findAll();
+	}
+
 }
