@@ -20,4 +20,9 @@ public class ShopDao {
 		return sr.findAll();
 	}
 
+	public String post(Shop a) {
+		sr.save(a);
+		return "Success";
+	}
+
 }

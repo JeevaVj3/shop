@@ -33,5 +33,12 @@ public class ShopController {
 		log.info(ss.get());
 		return ss.get();
 	}
+	
+	@PostMapping("post")
+	public String post(@RequestBody Shop a ) {
+		PropertyConfigurator.configure("log.properties");
+		log.info(ss.post(a));
+		return ss.post(a);
+	}
 
 }

@@ -19,4 +19,8 @@ public class ShopService {
 		return sd.get();
 	}
 
+	public String post(Shop a) {
+		return sd.post(a);
+	}
+
 }
